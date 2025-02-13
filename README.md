@@ -1,4 +1,4 @@
-<h1 align="center">Porno365 API (Неофициальное)</h1>
+<h1 align="center">Неофициальное API для Porno365</h1>
 
 # Дисклеймер
 > [!IMPORTANT] 
