@@ -105,23 +105,3 @@ class P365:
     @property
     def tags(self) -> dict:
         return self._tags
-
-
-
-async def main():
-    client = P365()
-
-    url = 'http://1porno365.net/movie/43368'
-
-    content = await client.get(url, quality='Хорошее качество')
-
-    print(content.video_url)  # Ссылка на видео
-    print(content.img_url)
-    print(content.title)
-    print(content.description) 
-    print(content.actors) 
-    print(content.category) 
-    print(content.tags) 
-
-if __name__=="__main__":
-    asyncio.run(main())
