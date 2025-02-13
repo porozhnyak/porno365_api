@@ -39,6 +39,8 @@ pip install beautifulsoup4 selenium webdriver-manager fake-useragent
 ### Создаем экземпляр класса:
 
 ```python
+from p365 import P365
+
 parser = P365()
 ```
 Передаем URL в метод ```get()```
