@@ -20,8 +20,8 @@ class P365:
 
     async def fetch_html(self, url: str) -> str:
         """Функция для выполнения HTTP-запроса и получения HTML"""
-        fetcher = SeleniumFetcher()  # Создаём экземпляр SeleniumFetcher
-        html = fetcher.fetch_html(url)  # Используем его для получения HTML
+        fetcher = SeleniumFetcher()
+        html = fetcher.fetch_html(url)
         return html
 
     async def get(self, url: str, quality: str = 'Среднее качество') -> 'P365':
@@ -57,7 +57,6 @@ class P365:
 
     def _get_actors(self, soup):
         actors_links = soup.find_all('a', class_='model_link')
-        # Возвращаем список актеров с пробелами, а не с подчеркиваниями
         return [x.get_text(strip=True) for x in actors_links] if actors_links else []
 
     def _get_category(self, soup):
